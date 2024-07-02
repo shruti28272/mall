@@ -1,0 +1,310 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'jost'sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    
+ 
+    justify-content: space-between;
+    padding: 20px 10%;
+
+}
+.logo img{
+    max-width: 90px;
+    height: auto;
+     nav-right: 100%; 
+border-radius: 3px;
+
+}
+.navmenu{
+    display: flex;
+
+}
+.navmenu a{
+    color: black;
+    font-size: 26px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42 ease;
+}
+.navmenu a:hover{
+    color: red;
+    transform :scale(1.5);
+}
+.navmenu i:hover{
+    transform :scale(1.5);
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: rgb(7, 7, 7);
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42 ease;
+}
+.nav-icon i:hover{
+transform :scale(1.1);
+color: red;
+}
+#menu-bar{
+    font-size: 35px;
+    color: black;
+    z-index: 10001px;
+    cursor: pointer;
+}
+section{
+    padding: 5% 10%;
+
+}
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url('back.jpg');
+    background-position: center;
+   background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+.main-text h5{ 
+    color: red;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    /* margin-right: 50px;
+    padding-right: 500px; */
+    text-align: center;
+    justify-content: center;
+    
+}
+.main-text h1{
+    color: rgb(3, 3, 3);
+justify-content: center; 
+text-align: center;
+line-height: 1.1;
+font-size: 65px;
+text-transform: capitalize;
+font-weight: 600;
+margin: 6px 0 10px;
+} 
+.main-text p{
+    color: rgb(90, 30, 163);
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+    justify-content: center; 
+text-align: center;
+}
+button{
+display: block;
+margin: auto;
+color: black;
+font-size: 16px;
+font-weight: 500;
+text-transform: capitalize;
+border: 2px solid rgb(225, 144, 23);
+padding: 12px 25px;
+transition: all .42s ease;
+justify-content: center;
+}
+button:hover{
+    background-color: black;
+    color: rgb(236, 230, 222);
+}
+header.sticky{
+    background: #fff;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0/10%);
+}
+.center-text{
+color: black;
+text-transform: capitalize;
+font-size: 28px;
+text-align: center;
+margin-bottom: 30px;
+}
+
+
+.center-text span{
+    color: greenyellow;
+}
+
+.products{
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap:2rem;
+}
+.new{
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap:2rem;
+    padding-top:100px ;
+}
+.next{display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap:2rem;
+    padding-top:100px ;
+
+}
+.row{
+    position: relative;
+    transition: all .40s;
+
+}
+.row img{
+    width:250px;
+    height: 100%;
+    transition: all .40s;
+
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text h5{
+position: absolute;
+top: 13px;
+left: 13px;
+color: #fff;
+font-size: 12px;
+font-weight: 500;
+text-transform: uppercase;
+background-color: rgb(226, 117, 22);
+padding: 3px 10px;
+border-radius: 2px;
+}
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+.heart-icon:hover{
+    color: red;
+}
+.ratting i{
+color: rgb(232, 157, 72);
+font-size: 18px;
+}
+.price h4{
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.price p{
+
+color: black;
+    font-size: 16px;
+     text-transform: capitalize; 
+    font-weight: 400;
+}
+ .client-review{
+    
+    background-color: rgb(215, 209, 209);
+   
+} 
+.reviews{
+text-align: center;
+
+
+}
+.reviews h1{
+    color: rgb(9, 9, 9);
+    font-size: 15px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+
+}
+.reviews img{
+width: 200px;
+height: auto;
+border-radius: 25px;
+margin: 10px 0;
+}
+.reviews img:hover{
+    transform: scale(0.9);
+}
+.reviews p{
+color: rgb(14, 13, 13);
+font-size: 16px;
+font-weight: 400;
+line-height: 25px;
+margin-bottom: 10px;
+}
+ @media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+ }
+ @media(max-width:630px){
+    .main-text h1{
+        font-size: 50px;
+        transition: .4s;
+    }
+    .main-text p{
+        font-size: 18px;
+        transition: .4s;
+    }
+    button{
+        padding: 10px 20px;
+        transition: .4s;
+    }
+ }
+ @media(max-width:750px){
+    .navmenu{
+        position: absolute;
+        height: 130vh;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+padding: 120px 30px;
+transform: all .42s;  
+  }
+
+ 
+ .navmenu a{
+display: block;
+margin: 18px 0;
+ }
+.navmenu.open{
+right: 0;
+}
+
+}
+.contact{
+    background-color: rgb(153, 151, 151);
+
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(160px,auto));
+    gap: 3rem;
+} 
+.first-info img{
+    height: 120px;
+}
+.contact-info p:hover{
+color: red;
+}
